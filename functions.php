@@ -25,3 +25,16 @@ function removeDups(array $input){
     }
     echo($newArr);
 }
+
+function distribution(array $input){
+    $newArr = array();
+    foreach($input as $n => $value){
+        if(!in_array($n, $input)){
+            $newArr += array($n => 1);
+        }
+        else{
+            $newArr[$n][$value]++;
+        }
+    }
+
+}
