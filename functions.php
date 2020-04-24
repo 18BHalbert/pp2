@@ -15,3 +15,13 @@ function largest(array $input){
     }
     echo ("largest: " . $largest);
 }
+
+function removeDups(array $input){
+    $newArr = array();
+    foreach($input as $n){
+        if(!in_array($n, $input)){
+            array_push($newArr, $n);
+        }
+    }
+    echo($newArr);
+}
