@@ -20,7 +20,17 @@ error_reporting(E_ALL);
 <body>
 
 <?php
-    echo("PHP Array Practice.")
+echo("PHP Array Practice.");
+
+$numbers = array(7,9,8,9,8,8,6);
+printArr($numbers);
+
+function printArr($numbers){
+    foreach($numbers as $n){
+        echo($n . "<br>");
+    }
+}
+
 ?>
 
 </body>
