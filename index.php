@@ -27,6 +27,7 @@ $numbers = array(7,9,8,9,8,8,6);
 include("functions.php");
 
 printArr($numbers);
+largest($numbers);
 
 ?>
 
